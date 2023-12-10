@@ -19,3 +19,8 @@ ingress:
         - path: /
           pathType: ImplementationSpecific
   tls: []
+
+service:
+  type: NodePort
+  port: 443
+  targetPort: 3000
