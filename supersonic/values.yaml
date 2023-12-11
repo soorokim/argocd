@@ -6,7 +6,7 @@ replicaCount: 3
 
 image:
   repository: docker-repo.soorokim.com/supersonic
-  tag: 8e51d5d
+  tag: 25474ad
 
 ingress:
   enabled: true
