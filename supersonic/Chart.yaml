@@ -1,4 +1,4 @@
 apiVersion: v2
 name: supersonic
 description: A Helm chart for Kubernetes
-version: 1.0.0-cfa0545
+version: 1.0.0-d827f5e
