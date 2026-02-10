@@ -5,11 +5,8 @@ app:
 replicaCount: 3
 
 image:
-  repository: ghcr.io/soorokim/supersonic
+  repository: docker-repo.soorokim.com/supersonic
   tag: d827f5e
-
-imagePullSecrets:
-  - ghcr-secret
 
 ingress:
   enabled: true
