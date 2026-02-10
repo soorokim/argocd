@@ -10,7 +10,7 @@ image:
 
 ingress:
   enabled: true
-  annotations: 
+  annotations:
     kubernetes.io/ingress.class: nginx
     nginx.ingress.kubernetes.io/rewrite-target: /
   hosts:
@@ -24,3 +24,18 @@ service:
   type: NodePort
   port: 80
   targetPort: 3000
+
+resources:
+  requests:
+    cpu: 100m
+    memory: 128Mi
+  limits:
+    cpu: 500m
+    memory: 512Mi
+
+healthCheck:
+  enabled: true
+  path: /api/health
+  initialDelaySeconds: 15
+  readinessInitialDelaySeconds: 5
+  periodSeconds: 10
